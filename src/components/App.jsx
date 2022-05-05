@@ -1,17 +1,12 @@
+import Alert from './Alert/Alert';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
-      }}
-    >
-      React homework template
+    <div>
+      <Alert text="Hello World!!!" type="error" />
+      <Alert text="Hello World!!!" type="warning" />
+      <Alert text="Hello World!!!" type="success" />
+      <Alert text="Hello World!!!" />
     </div>
   );
 };
